@@ -1,0 +1,19 @@
+﻿# Secrets — never commit your real API key
+.streamlit/secrets.toml
+
+# Local persistence created by data_store.py (session codes + report history)
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
