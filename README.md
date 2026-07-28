@@ -1,4 +1,4 @@
-# AI Voice Assessment Assistant
+# AI Voice Assistant
 
 An AI voice assistant named Ava that runs assessment conversations with
 customers, including financial assessment, business management assessment,
@@ -47,82 +47,10 @@ ai_voice_assessment_assistant/
 ## Prerequisites
 
 - Python 3.10 or newer
-- A Google Gemini API key, created at https://aistudio.google.com/apikey
+- A Google Gemini API key
 - Visual Studio Code, or any code editor of your choice
 
-## Setup in VS Code
-
-1. Open the `ai_voice_assessment_assistant` folder in VS Code.
-
-2. Open a terminal inside VS Code (Terminal, then New Terminal) and create
-   a virtual environment:
-
-   ```
-   python -m venv venv
-   ```
-
-3. Activate the virtual environment:
-
-   On Windows:
-   ```
-   venv\Scripts\activate
-   ```
-
-   On macOS or Linux:
-   ```
-   source venv/bin/activate
-   ```
-
-4. Install the dependencies:
-
-   ```
-   pip install -r requirements.txt
-   ```
-
-5. Set up your API key. Copy the example secrets file:
-
-   ```
-   cp .streamlit/secrets.toml.example .streamlit/secrets.toml
-   ```
-
-   Then open `.streamlit/secrets.toml` in VS Code and paste your real
-   Gemini API key in place of the placeholder text.
-
-6. In VS Code, select the virtual environment as your Python interpreter:
-   open the command palette (Ctrl+Shift+P or Cmd+Shift+P), choose
-   "Python: Select Interpreter", and pick the one inside the `venv` folder.
-
-## Running the app locally
-
-From the project folder, with the virtual environment activated:
-
-```
-streamlit run app.py
-```
-
-Streamlit will open the app in your browser, normally at
-http://localhost:8501. Your browser will ask for microphone permission the
-first time you try to record an answer; allow it to use the voice input
-feature.
-
 ## Deploying with Streamlit Community Cloud
-
-1. Push this project to a GitHub repository. Make sure `.streamlit/secrets.toml`
-   is not included, since it is already listed in `.gitignore`.
-
-2. Go to https://share.streamlit.io and sign in with your GitHub account.
-
-3. Choose New app, select your repository, and set `app.py` as the main
-   file.
-
-4. Before deploying, open the app's Settings, then Secrets, and paste in:
-
-   ```
-   GEMINI_API_KEY = "your-real-api-key"
-   ```
-
-5. Press Deploy. Streamlit will install everything from `requirements.txt`
-   automatically and give you a public link to the running app.
 
 ## Customizing or extending the project
 
