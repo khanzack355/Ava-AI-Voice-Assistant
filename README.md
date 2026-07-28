@@ -52,16 +52,6 @@ ai_voice_assessment_assistant/
 
 ## Deploying with Streamlit Community Cloud
 
-## Customizing or extending the project
-
-- To add a new assessment type, add a new entry to the `ASSESSMENTS`
-  dictionary in `assessments.py` with a title, description, system_prompt,
-  and report_prompt, following the same pattern as the existing ones.
-- To change Ava's voice language, pass a different `lang` value to
-  `text_to_speech` in `voice_utils.py`, for example `lang="hi"` for Hindi.
-- To change the Gemini model being used, edit `DEFAULT_MODEL` at the top
-  of `gemini_client.py`.
-
 ## Notes on responsible use
 
 Ava is designed to give general information and structured observations,
@@ -69,3 +59,9 @@ not licensed professional advice. The financial, business, sales, and
 wellness reports it produces are meant as a helpful starting point for a
 conversation with a qualified professional, not a replacement for one.
 This is reflected directly in the system prompts in `assessments.py`.
+<img width="1366" height="972" alt="screencapture-localhost-8501-2026-07-26-03_48_34" src="https://github.com/user-attachments/assets/5e89bd27-ed5e-4994-a57a-27b06cb87fb2" />
+<img width="1366" height="739" alt="screencapture-localhost-8501-2026-07-26-03_48_58" src="https://github.com/user-attachments/assets/ab846a58-d6bd-44ac-8a22-6d6b6e1efb75" />
+<img width="1366" height="739" alt="screencapture-localhost-8501-2026-07-26-03_49_18" src="https://github.com/user-attachments/assets/6654346c-392f-41ad-9903-03227f2ac3fa" />
+<img width="1366" height="739" alt="screencapture-localhost-8501-2026-07-26-03_49_57" src="https://github.com/user-attachments/assets/399f2042-c1e0-42d7-bb92-cf49bed7d01e" />
+<img width="1366" height="739" alt="screencapture-localhost-8501-2026-07-26-03_50_12" src="https://github.com/user-attachments/assets/70c6d5c4-14a9-4d9f-9aa7-06551ade47e1" />
+<img width="1366" height="739" alt="screencapture-localhost-8501-2026-07-26-03_50_36" src="https://github.com/user-attachments/assets/8fa0394e-20eb-4a54-972a-c7e285a3a305" />
